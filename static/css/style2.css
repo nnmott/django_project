@@ -1,0 +1,41 @@
+
+
+
+body{ margin: 0px; background: #000; }
+div#banner{
+	color: #714D91;
+	position:relative;
+	font-family: 'Bangers', cursive;
+	width: 3000vh;
+	height: 1000px;
+	margin: 0px auto;
+	/* overflow: hidden; */
+	background: url('/static/css/nasa2.jpg');
+	animation: animate-background linear 150s infinite;
+
+}
+@keyframes animate-background {	from { background-position: 0px 0px; } 	to { background-position: 4500px 0px; }}
+@-webkit-keyframes animate-backdrop { from { background-position: 0px 0px; } to { background-position: 	500px 0px;}
+div#banner > h1{
+	color: #FFF;
+	padding: 50px;
+}
+
+HTML:
+{% load static %}
+   <!doctype html>
+  <html>
+  <title>{% block title %}Upload Shit{% endblock %}</title>
+       <head>
+            <link href="//fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet" type="text/css">
+            <link rel="stylesheet" href="{% static 'css/style.css' %}">
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+      </head>
+      <body>
+  <div id="banner">
+    <h1>Upload yo shit</h1>
+  </div>
+  
+      </body>
+</html>

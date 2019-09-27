@@ -1,0 +1,35 @@
+@keyframes backgroundScroll {
+    from {background-position: 0 0;}
+    to {background-position: -200000px 0px;}
+}
+@-webkit-keyframes backgroundScroll {
+    from {background-position: 0 0;}
+    to {background-position: -200000px 0px;}
+}
+body  {
+    color:#fff;
+    text-align:center;
+    background-image: url('/static/css/space.jpg');
+    background-repeat:   background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-animation: backgroundScroll 10000s linear infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation: backgroundScroll 10000s linear infinite;
+    animation-fill-mode: forwards;
+    z-index:  1;
+ 
+}
+   h1{
+  font-family: 'Bangers', cursive
+}
+
+.astro{
+  z-index: 3;
+ width:  1000px;
+  height:   1000px;
+
+}
+    
+
+  
