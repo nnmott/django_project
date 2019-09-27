@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <head>
+    </head>
+        <body>
+          <div id="banner">
+            <div id="banner_backdrop">
+             <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                   <input type="file" name="document">
+                        <button type="submit">Upload file</button>
+              </form>
+                 {% if url %}
+                    <p>Uploaded file: <a href="{{ url }}">{{ url }}</a></p>
+                 {% endif %}
+            </div>
+            <div id="banner_content">
+            </div>
+          </div>
+        </body>
+{% endblock %}
